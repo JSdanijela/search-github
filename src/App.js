@@ -24,7 +24,7 @@ useEffect(()=>{
     }})
   .then(response => response.json())
   .then(data => {
-  //here we are getting the list of all users with similar usernames from the API
+  //here we are using the list of all users with similar usernames from the API
   getData(data.items);
   //passing the total number of the search results
   getResults(data.total_count);
