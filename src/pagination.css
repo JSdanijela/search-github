@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  width: 300px ;
+}
+
+
+#paginationContainer{
+  display: flex;
+  justify-content: center;
+}
+
+[aria-label^="Go to page number"] {
+  padding-top: 5px;
+}
+
+#paginationContainer a{
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border:none;
+  margin: 10px -5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  background: #f5f7fa;
+  box-shadow:  3px 2px 9px #b8bec0, 
+             -3px -2px 9px #faffff;
+}
+
+
+#paginationContainer a:focus, #paginationContainer a:hover{
+  background: #f5f7fa;
+  outline: none;
+  box-shadow: inset 4px 4px 7px #d0d2d5, 
+            inset -4px -4px 7px #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .pagination {
+    width: 80vw;
+    margin: 5px 0px;
+  }
+}
+
+
+
+@media only screen and (max-width: 350px) {
+  .pagination {
+    width: 90vw;
+    margin: 5px 0px;
+  }
+}

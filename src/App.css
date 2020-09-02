@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,100&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  text-align: center;  
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.App{
+width: 500px;
+margin: 5% 0%;
+border-radius: 15px;
+background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+box-shadow:  41px 41px 82px #556aca, 
+             -41px -41px 82px #7390ff;
+}
+
+#users{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+li{
+  display: grid;
+  align-self: center;
+  grid-template-columns: 0.5fr 1fr 0.8fr;
+  width: 340px;
+  padding: 10px 10px;
+}
+
+li a, li h4{
+  margin-top: 5px;
+}
+
+li a{
+  text-decoration:none;
+  color: #7f53ac;
+}
+
+/*The gradient text code I got from here https://cssgradient.io/blog/css-gradient-text/ */
+li i{
+  margin-top: 8px;
+  background: -webkit-linear-gradient(#7f53ac, #647dee );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+img{
+  border: 4px solid #d9dfe2;
+box-shadow:  8px 4px 17px #b8bec0, 
+             -8px -4px 17px #faffff;
+}
+
+input{
+  border-radius: 15px;
+  border:none;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  margin: 20px 0px;
+  background: #d9dfe2;
+  box-shadow: inset 5px 5px 9px #b8bec0, 
+            inset -5px -5px 9px #faffff;
+}
+
+input:focus{
+  outline: none;
+}
+
+form button{
+  padding: 8px 10px;
+  border-radius: 29px;
+  border:none;
+  margin: 0px 5px;
+  color: #b8bec0;
+  background: #f5f7fa;
+  box-shadow:  3px 2px 9px #b8bec0, 
+             -3px -2px 9px #faffff;
+}
+
+form button:focus{
+  outline: none;
+}
+
+form button:focus, form button:hover{
+  background: #f5f7fa;
+  outline: none;
+  box-shadow: inset 4px 4px 7px #d0d2d5, 
+            inset -4px -4px 7px #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .App{
+    width: 90vw;
+  }
+
+  #user{
+    width: 80vw;
+  }
+}
